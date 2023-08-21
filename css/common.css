@@ -1,0 +1,1152 @@
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.inner-pick{
+  margin: 0 auto;
+  position: relative;
+}
+.signin{
+  margin-top: 120px;
+  padding: 100px 0 150px;
+  background-color: #EA9926;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.signin h1{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.signin__card {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 6px;
+  background-color: #f6f5f0;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, .3);
+  color: #555;
+}
+.signin__card h2 {
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.signin__card form {
+  padding: 30px 22px;
+}
+.signin__card form input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.signin__card form p {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #EA9926;
+  text-align: center;
+}
+.signin__card .actions {
+  display: flex;
+  border-top: 1px solid #ddd;
+
+}
+.signin__card .actions a {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  font-size: 14px;
+  border-right: 1px solid #ddd;
+}
+.signin__card .actions a:hover {
+  text-decoration: underline;
+}
+.signin__card .actions a:last-child {
+  border-radius: none;
+}
+/*COMMON*/
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+}
+a {
+  text-decoration: none;
+}
+img {
+  /* img(인라인 요소) 하단에 Baseline 공백을 제거 */
+  display: block;
+}
+/*INNER*/
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*BUTTON*/
+.btn {
+  width: 130px;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  transition: .4s;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px 20px;
+}
+.btn:hover {
+  text-decoration: underline;
+  background-color: #fff;
+  border-color: #fff;
+  color: #000000;
+}
+.btn.btn--reverse {
+  background-color: #00704A;
+  color: #FFF;
+}
+.btn.btn--reverse:hover {
+  background-color: #00704A;
+  color: #fff
+}
+.btn.btn--brown {
+  color: #004734;
+  border-color: #004734;
+  border-width: 2px; /* 테두리의 두께를 조정할 수 있습니다. */
+  border-style: solid; /* 테두리 스타일을 설정합니다. 다른 스타일도 가능합니다 (dashed, dotted 등). */
+  padding: 10px 20px; /* 텍스트와 테두리 사이의 간격을 조절할 수 있습니다. */
+}
+.btn.btn--brown:hover {
+  color: #FFF;
+  background-color: #004734
+}
+.btn.btn--gold {
+  color: #FFF;
+  border-color: #fff;
+  position: relative; /* 위치를 상대적으로 설정합니다. */
+  left: 300px;
+  top: 270px;
+}
+.btn.btn--gold:hover {
+  color: #000000;
+  background-color: #fff;
+  text-decoration: underline;
+}
+.btn.btn--white {
+  border-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  color: #FFF;
+}
+.btn.btn--white:hover {
+  color: #fff;
+  background-color: #282828;
+}
+.find {
+  width: 130px;
+  padding: 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  transition: .4s;
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid;
+}
+.find:hover {
+  text-decoration: underline;
+  background-color: #000;
+  color: #FFF;
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/*HEADER*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: #F6F5F0;
+  border-bottom: 1px solid #c8c8c8;
+}
+header > .inner {
+  height: 120px;
+}
+header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+header .sub-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+header .sub-menu ul.menu {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+header .sub-menu ul.menu li {
+  position: relative;
+}
+header .sub-menu ul.menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+header .sub-menu ul.menu li a {
+  padding: 11px 16px;
+  display: block;
+  font-size: 13px;
+  color: #656565;
+}
+header .sub-menu ul.menu li a:hover {
+  color: #000;
+}
+header .sub-menu .search {
+  position: relative;
+  height: 34px;
+}
+header .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: width .4s;
+}
+header .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #EA9926;
+}
+header .sub-menu .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: .4s;
+}
+header .sub-menu .search.focused .material-icons {
+  opacity: 0;
+}
+header .main-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+}
+header .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+header .main-menu .item .item__name:hover{
+  text-decoration : underline;
+}
+header .main-menu .item:hover .item__name {
+  background-color: #2C2A29;
+  color: #047d3e;
+}
+header .main-menu .item .item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none; /* 이 부분 변경 */
+}
+header .main-menu .item:hover .item__contents {
+  display: block;
+}
+header .main-menu .item .item__contents .contents__menu {
+  background-color: #2C2A29;
+  height: 400px;
+}
+header .main-menu .item .item__contents .contents__menu > ul {
+  padding: 20px 0;
+  display: flex;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li {
+  width: 220px;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li h4 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li h4:hover{
+  text-decoration : underline;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+  text-decoration : underline;
+}
+/*header .main-menu .item .item__contents .contents__texture {
+  padding: 26px 0;
+  font-size: 12px;
+  background-image: url("../images/main_menu_pattern.jpg");
+}
+header .main-menu .item .item__contents .contents__texture h4 {
+  color: #999;
+  font-weight: 900;
+}
+header .main-menu .item .item__contents .contents__texture p {
+  color: #EA9926;
+  margin: 4px 0 14px;
+}*/
+
+/*FOOTER*/
+footer {
+  background-color: #282828;
+  border-top: 1px solid #333;
+  border-bottom: 40px;
+}
+footer .inner {
+  height: 230px;
+  padding: 20px 0 30px 0;
+}
+footer .menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+footer .menu li {
+  position: relative;
+}
+footer .menu li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  margin: auto;
+}
+footer .menu li:last-child::before {
+  display: none;
+}
+footer .menu li a {
+  display: block;
+  color: #CCC;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0px 5px;
+  white-space: nowrap;
+  border-right: 1px solid #393939; /* 모든 a에 보더 추가 */
+}
+footer .menu li:last-child a {
+  border-right: none;
+}
+footer .menu li a.orange {
+  color: #00B050;
+}
+footer .btn-group1 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer .btn-group1 .btn {
+  font-size: 12px;
+  margin-right: 10px;
+}
+footer .btn-group1 .btn:last-child {
+  margin-right: 0;
+}
+footer .info {
+  margin-top: 30px;
+  text-align: center;
+}
+footer .info span {
+  margin-right: 20px;
+  color: #999;
+  font-size: 12px;
+}
+footer .info span:last-child {
+  margin-right: 0;
+}
+footer .copyright {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
+}
+footer .logo {
+  margin: 30px auto 0;
+}
+.btn.btn--primary{
+  color: #fff;
+  background-color: #EA9926;
+  border: none;
+}
+.btn.btn--primary:hover {
+  background-color: #cc8823;
+}
+.btn.block {
+  width: 100%;
+}
+
+/*BACK TO POSITION*/
+.back-to-position {
+  opacity: 0;
+  transition-duration: 1s;
+}
+.back-to-position.to-left {
+  transform: translateX(150px);
+}
+.back-to-position.to-right1 {
+  transform: translateX(-150px);
+  padding-top: 100px;
+  padding-left: 130px;
+}
+.back-to-position.to-right {
+  transform: translateX(-150px);
+}
+.show .back-to-position {
+  opacity: 1;
+  transform: translateX(0);
+}
+.show .back-to-position.delay-1 { transition-delay: .3s; }
+.show .back-to-position.delay-2 { transition-delay: .6s; }
+.show .back-to-position.delay-3 { transition-delay: .9s; }
+
+/*BADGES*/
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+  z-index: 1
+}
+header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 550px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/*VISUAL*/
+.visual {
+  margin-top: 120px;
+  height: 32vw;
+  background-image: url("../images/2023_summer2_promotion_top_pc_bg_1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.visual .inner {
+  height: 646px;
+}
+.visual .title {
+  position: absolute;
+
+  top: 38%;
+  left: 10%;
+  transform: translateX(-50%);
+}
+.visual .title .btn {
+  position: absolute;
+  top: 280%;
+  left: 20%;
+  width: 170px;
+}
+.drink {
+  max-width: 100%; /* 부모 요소의 최대 너비 설정 */
+  max-height: 100%; /* 부모 요소의 최대 높이 설정 */
+}
+.visual .cup1.image {
+  position: absolute;
+  bottom: 10px;
+  right: 280px;
+  transform: scale(1.2);
+  width: auto; /* 이미지 너비를 자동으로 조절 */
+  max-width: 100%; /* 최대 너비는 부모 요소 너비를 넘지 않도록 설정 */
+}
+.visual .cup2.image {
+  position: absolute;
+  bottom: 10px;
+  left: 380px;
+  transform: scale(1.2);
+  width: auto; /* 이미지 너비를 자동으로 조절 */
+  max-width: 100%; /* 최대 너비는 부모 요소 너비를 넘지 않도록 설정 */
+}
+.visual .cup3.image {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  transform: scale(1.2);
+  width: auto; /* 이미지 너비를 자동으로 조절 */
+  max-width: 100%; /* 최대 너비는 부모 요소 너비를 넘지 않도록 설정 */
+}
+
+.visual .fade-in {
+  background: transparent;
+  vertical-align: baseline;
+  bottom: 50%;
+  right: 20px;
+  opacity: 0;
+}
+
+/*NOTICE*/
+.notice {
+  position: relative;
+}
+.notice .bg-left {
+  width: 50%;
+  height: 100%;
+  background-color: #111111;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.notice .bg-right {
+  width: 50%;
+  height: 100%;
+  background-color: #f6f5ef;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.notice .inner {
+  height: 62px;
+  display: flex;
+}
+.notice .inner__left {
+  width: 70%;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+}
+.notice .inner__left h2 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.notice .inner__left .swiper {
+  height: 62px;
+  flex-grow: 1;
+}
+.notice .inner__left .swiper .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+.notice .inner__left .swiper .swiper-slide a {
+  color: #fff;
+}
+.notice .inner__left .notice-more {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice .inner__left .notice-more .material-icons {
+  color: #fff;
+  font-size: 30px;
+}
+.notice .inner__right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.notice .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+.notice .inner__right .toggle-promotion {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice .inner__right .toggle-promotion .material-icons {
+  font-size: 30px;
+}
+/*PROMOTION*/
+.promotion {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f5ef;
+  overflow: hidden;
+  position: relative;
+  height: 663px;
+  transition: height .4s;
+  margin-top: 35px #F6F5EF;
+}
+.promotion.hide {
+  height: 0;
+}
+.promotion .swiper {
+  /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
+  padding-top: 40px;
+  width: calc(819px * 3 + 10px * 2);
+  height: 553px;
+  flex-shrink: 0;
+}
+.promotion .swiper-slide {
+  position: relative;
+  opacity: .5;
+  transition: opacity 1s;
+}
+.promotion .swiper-slide-active {
+  opacity: 1;
+}
+.promotion .swiper-slide .btn {
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.promotion .swiper-slide .btn:hover{
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #000;
+  font-weight: 900;
+}
+.promotion .swiper-pagination {
+  bottom: 40px !important;
+  z-index: 1;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet {
+  background-color: transparent;
+  background-image: url("../images/main_prom_off.png");
+  width: 13px;
+  height: 12px;
+  margin-right: 6px;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet-active {
+  background-image: url("../images/main_prom_on.png");
+}
+.promotion .swiper-button-prev,
+.promotion .swiper-button-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  top: 300px;
+  z-index: 1;
+  color: #333;
+}
+.promotion .swiper-button-prev {
+  left: 50%;
+  margin-left: -480px;
+}
+.promotion .swiper-button-next {
+  right: 50%;
+  margin-right: -480px;
+}
+.promotion .swiper-button-prev:hover,
+.promotion .swiper-button-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+.promotion .swiper-button-prev::after,
+.promotion .swiper-button-next::after {
+  display: none;
+}
+
+
+/*REWARDS*/
+.rewards {
+  position: relative;
+}
+.rewards .bg-left {
+  width: 50%;
+  height: 100%;
+  background-color: #1E3932;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rewards .bg-right {
+  width: 50%;
+  height: 100%;
+  background-color: #1E3932;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.rewards .inner {
+  display: flex; /* flexbox를 이용하여 아이템을 수직으로 정렬 */
+  align-items: center; /* 내용을 수직으로 가운데 정렬 */
+  justify-content: center; /* 내용을 수평으로 가운데 정렬 */
+  background-color: #1E3932;
+  height: 241px;
+}
+.rewards .text-container {
+  text-align: left; /* 왼쪽 정렬 */
+  margin-bottom: 20px; /* 아래쪽 여백 추가 */
+}
+
+.rewards h1 {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 0; /* 위쪽 여백 제거 */
+}
+.rewards h4 {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: left; /* 왼쪽 정렬 */
+  margin-left: 0; /* 왼쪽 여백 제거 */
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.bold-text {
+  font-weight: bold; /* 굵은 글씨체 적용 */
+}
+.rewards .content {
+  display: flex; /* flexbox를 이용하여 내용을 옆으로 배열 */
+  align-items: center; /* 내용을 수직으로 가운데 정렬 */
+  justify-content: center; /* 내용을 수평으로 가운데 정렬 */
+  flex-wrap: wrap; /* 내용이 너무 길 경우 줄바꿈을 허용 */
+}
+.rewards .text-content hr {
+  width: 120%;
+  border: none; /* 기본 테두리 스타일 제거 */
+  background-color: #4B615B; /* 배경색으로 선 효과 생성 */
+  height: 2px; /* 선의 두께 설정 */
+}
+.rewards .rewards-logo {
+  flex: 0 0 20%; /* 로고의 너비를 설정 */
+  margin-right: 20px; /* 로고와 텍스트 사이 간격을 추가 */
+}
+
+.rewards .text-group {
+  flex: 1; /* 텍스트 그룹이 공간을 차지하도록 확장 */
+}
+
+.rewards img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 15%; /* 이미지 크기를 80%로 설정하여 20%만 줄여들게 합니다. */
+}
+.rewards .btn {
+  display: inline-block; /* 인라인 블록 요소로 표시 */
+  padding: 10px 20px; /* 버튼 내부 여백 설정 */
+  border: none; /* 테두리 제거 */
+  border-radius: 4px; /* 버튼 모서리 둥글게 */
+  font-size: 12px; /* 폰트 크기 설정 */
+  cursor: pointer; /* 커서를 포인터로 변경하여 버튼을 클릭 가능하게 */
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+.rewards .btn.btn--reverse.sign-up {
+  border: 2px solid #00704A;
+}
+.rewards .sign-up,
+.rewards .sign-in {
+  color: white; /* 텍스트 색상 설정 */
+  margin-right: 10px; /* 버튼 간 간격 추가 */
+}
+.rewards .btn-group1 {
+  position: absolute;
+  right: 0;
+  bottom: 120px; /* 위치를 조절할 수 있음 */
+  width: calc(180px + 10px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end; /* 아래쪽으로 정렬 */
+}
+
+.rewards .btn-group2 {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  width: 180px;
+  height: 34px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.rewards .btn-group1 .btn.sign-up {
+  margin-right: 10px;
+  width: auto;
+  color: #fff;
+  align-self: flex-start; /* 위로 올리도록 설정 */
+}
+.rewards .btn-group1 .btn.sign-in {
+  border: 2px solid #fff;
+}
+.rewards .btn-group1 .btn.sign-up,
+.rewards .btn-group1 .btn.sign-in {
+  width: calc(180px / 2 - 5px); /* 버튼 간격(margin-right)을 고려하여 설정 */
+}
+.inner .btn-group1 .btn .btn--white {
+  border: 2px solid #fff;
+}
+
+.rewards .btn-group2 .btn.gift {
+  width: 179px;
+  border: 2px solid #fff;
+  letter-spacing: 0.5px;
+  line-height: 34px; /* 버튼 높이에 맞게 설정 */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-left: -8px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+/*SEASON PRODUCT*/
+.season-product {
+  background-image: url("../images/2023_summer2_promotion_bg_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.season-product .inner {
+  height: 600px;
+}
+.season-product .floating3 {
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
+.season-product .text-group {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+.season-product .text-group .title {
+  margin-bottom: 10px;
+}
+.season-product .text-group .description {
+  margin-bottom: 15px;
+}
+
+
+/*RESERVE COFFEE*/
+.reserve-coffee {
+  background-image: url("../images/230418_pc_reserve_bg.jpg");
+  background-size: cover;
+}
+.reserve-coffee .inner {
+  height: 400px;
+  background-image: url("../images/230418_pc_reserve_coffee_bg.png");
+  background-position: center;
+}
+.reserve-coffee .reserve-logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+.reserve-coffee .text-group {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+.reserve-coffee .product {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.reserve-coffee .inner .delay-1 {
+  transform: translateY(-60px);
+}
+
+/*PICK YOUR FAVORITE*/
+.pick-your-favorite {
+  background-image: url("../images/2023_summer2_pick_bg.jpg");
+  background-color: #45434c;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  background-position: bottom;
+}
+.pick-your-favorite .inner {
+  display: flex;
+  align-items: center;
+}
+.pick-your-favorite .inner-pick {
+  display: flex;
+  align-items: center;
+}
+
+.pick-your-favorite .fav_prod_txt {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 내용 높이를 100%로 설정 */
+  justify-content: space-between; /* 위와 아래 간격 균등 분배 */
+}
+
+.pick-your-favorite .fav_prod_txt .fav_prod_txt01{
+  padding: 180px 0px 30px 600px;
+  border-radius: 4px;
+}
+.pick-your-favorite .fav_prod_txt .fav_prod_txt02 {
+  padding: 10px 0px 30px 500px; /* 아래쪽 패딩 조정 */
+  border-radius: 4px;
+}
+
+.pick-your-favorite .fav_prod_img {
+  width: 400px; /* 이미지의 가로 크기에 맞게 조정 */
+  background-image: url("../images/2023_summer2_pick_img.png");
+  height: 750px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  flex-grow: 1;
+}
+.pick-your-favorite .btn--white {
+  color: #fff;
+  margin-top: 0px;
+  margin-left: 720px;
+}
+.pick-your-favorite .text-group .title {
+  margin-bottom: 40px;
+}
+.pick-your-favorite .text-group .description {
+  margin-bottom: 40px;
+}*/
+/*RESERVE STORE*/
+.reserve-store .inner {
+  height: 400px;
+}
+.reserve-store .medal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reserve-store .texture1{
+  top: 10px;
+  position: relative;
+  right: 30px;
+}
+.reserve-store .texture2{
+  right: 260px;
+  padding: 150px 0px 0px;
+}
+.reserve-store .texture3{
+  padding: 47px 0px 0px 0px;
+}
+.reserve-store .texture1,
+.reserve-store .texture2 {
+  position: absolute;
+  top: 0;
+}
+.reserve-store .store-link {
+  position: relative;
+}
+.reserve-store .btn {/*임시*/
+  color: black;
+  position: absolute;
+  bottom: 80px;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+}
+.reserve-store .btn:hover {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 80px;
+  transform: translateX(-50%);
+  background-color: #000000;
+  border: 2px solid #000000;
+}
+
+
+/*.reserve-store .medal .front {
+  position: absolute;
+  transition: 1s;
+}*/
+/*푸터 메뉴*/
+.footer_menus {
+  display: flex; /* 내부 요소를 가로로 배열하기 위해 flex 사용 */
+  padding: 0; /* 내부 리스트의 padding 초기화 */
+  
+  list-style: none; /* 내부 리스트의 기본 스타일 초기화 */
+  height: 200px;
+}
+
+/* 각각의 ul 요소의 스타일 */
+.footer_menus ul {
+  list-style: none;
+}
+.footer_menus li {
+  margin-bottom: 8px; /* 행간 조절을 위한 마진 추가 */
+}
+.footer_menus .footer_menu_ttl {
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.awards .swiper-slide{
+  display: flex; /* 이미지를 가로로 나열 */
+  flex-wrap: nowrap; /* 이미지가 넘치는 경우 줄 바꿈 방지 */
+  overflow-x: hidden;
+  justify-content: center;
+
+}
+.awards .swiper-slide img {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-right: 0;
+}
+.footer_menus {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+  font-size: 12px;
+}
+.footer_first_menu,
+.footer_second_menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer_menu_ttl {
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative; /* 하위 메뉴를 포함하기 위해 위치 설정 */
+}
+.footer_menu_ttl a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer_arrow_down {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  transform: rotate(45deg);
+  margin-left: 5px;
+}
+.footer_second_menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  top: 100%; /* 하위 메뉴가 상위 메뉴 아래에 나타나도록 설정 */
+  left: 0; /* 하위 메뉴가 상위 메뉴의 왼쪽에 나타나도록 설정 */
+  width: 200px; /* 하위 메뉴의 너비 조정 */
+}
+.footer_first_menu:hover .footer_second_menu {
+  display: block;
+}
+.footer_second_menu li {
+  margin-bottom: 5px;
+}
+.footer_second_menu a {
+  text-decoration: none;
+  color: #333;
+}
+/* 하위 메뉴 화살표 */
+.footer_second_menu .footer_arrow_down {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  transform: rotate(45deg);
+  margin-left: 5px;
+}
+
+/* 두 번째 수준의 하위 메뉴에 대한 스타일링 */
+.footer_2depth_ttl:hover .footer_arrow_down,
+.footer_2depth_ttl2:hover .footer_arrow_down {
+  transform: rotate(225deg);
+}
+
+/*FIND STORE*/
+.find-store {
+  background-image: url("../images/find_store_bg.jpg");
+}
+.find-store .inner {
+  height: 400px;
+}
+.find-store .texture1 {
+  position: absolute;
+  top: 0;
+  left: 400px;
+}
+.find-store .texture2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.find-store .picture1 {
+  position: absolute;
+  left: 0;
+}
+.find-store .picture2 {
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: 250px;
+}
+.find-store .text-group {
+  position: absolute;
+  top: 120px;
+  left: 550px;
+}
+.find-store .text-group .title {
+  margin-bottom: 20px;
+}
+.find-store .text-group .description {
+  margin-bottom: 20px;
+}
